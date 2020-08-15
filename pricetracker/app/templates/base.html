@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div>
+      Price Tracker
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="{{ url_for('get_price') }}">Get Price</a>
+      </div>
+      {% block content %}{% endblock %}
+      {% block price_page %}{% endblock %}
+  </body>
+</html>

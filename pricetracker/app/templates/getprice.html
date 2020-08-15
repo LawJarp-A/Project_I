@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block price_page %}
+<h1>Hello</h1>
+<h2>Enter the link</h2>
+<form action="/getprice" method="post">
+  {{ form.hidden_tag() }}
+  <p>
+    {{form.enter_url.label}}<br />
+    {{form.enter_url(size = 42)}}<br />
+  </p>
+  <p>
+    {{form.submit()}}
+  </p>
+
+  {% if price %}
+  <p>
+    Price is {{price}}
+  </p>
+  {% endif %}
+
+</form>
+{% endblock %}
