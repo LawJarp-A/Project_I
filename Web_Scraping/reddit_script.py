@@ -12,11 +12,7 @@ import math
 #Can change so to retrieve more of less posts
 no_of_posts = 5
 
-#Automatic retrival of user-agent
-#NOTE: If not working, manually replace 'usr' with you user-agent and comment the following two lines
-# usr_agent = requests.get("https://www.whoishostingthis.com/tools/user-agent/")
-# usr_agent = bs4.BeautifulSoup(usr_agent.text, 'html.parser')
-# usr = usr_agent.find(class_ = "info-box user-agent").text
+#Put your own usr agent
 usr = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
 
 headers = {'User-agent':usr}
